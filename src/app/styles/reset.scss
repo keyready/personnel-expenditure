@@ -61,9 +61,18 @@ form {
     list-style: none;
 }
 
-.p-datatable-wrapper {
-    .p-column-header-content,
-    .p-editable-column{
-        padding: 5px !important;
+.p-datatable.p-datatable-lg .p-datatable-thead > tr > th,
+.p-editable-column {
+    text-align: center !important;
+    padding: 5px !important;
+}
+
+.p-column-header-content {
+    justify-content: center;
+}
+
+.p-datatable-tbody {
+    td {
+        padding: 2px;
     }
 }

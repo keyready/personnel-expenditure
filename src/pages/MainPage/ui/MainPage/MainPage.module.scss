@@ -8,6 +8,11 @@
 
 .text {
     z-index: 2;
+
+    * {
+        padding: 10px;
+        font-size: 20px;
+    }
 }
 
 .bgImg {

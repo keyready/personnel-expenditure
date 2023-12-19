@@ -9,6 +9,7 @@ import { HStack } from 'shared/UI/Stack';
 import { AppLink } from 'shared/UI/AppLink';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { useNavigate } from 'react-router-dom';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import classes from './MainPage.module.scss';
 
 const MainPage = () => {
@@ -16,7 +17,7 @@ const MainPage = () => {
         id: 1,
         division: '63 курс',
         bs: 120,
-        list: 119,
+        list: 118,
         face: 119,
         duty: 0,
         trip: 0,
@@ -28,7 +29,7 @@ const MainPage = () => {
     const navigate = useNavigate();
 
     const handleChangePageClick = useCallback(() => {
-        navigate('');
+        navigate(RoutePath.flipside);
     }, [navigate]);
 
     useEffect(() => {
@@ -87,7 +88,12 @@ const MainPage = () => {
 
     return (
         <Page className={classNames(classes.MainPage, {}, [])}>
-            <img className={classes.bgImg} src="./static/2018.jpg" alt="Это фон" />
+            <img
+                draggable={false}
+                className={classes.bgImg}
+                src="./static/2018.jpg"
+                alt="Это фон"
+            />
 
             <Text
                 className={classes.header}

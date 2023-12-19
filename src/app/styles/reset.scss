@@ -19,9 +19,8 @@ form {
 .p-datatable-table {
     * {
         color: black !important;
-        background: rgb(255 255 255 / 30%) !important;
+        background: #BAE3FF !important;
         font: var(--font-m);
-        font-size: 20px !important;
     }
 }
 
@@ -40,8 +39,31 @@ form {
         }
     }
 
-    .p-inputtext.p-component.p-filled.p-inputnumber-input.p-inputnumber-input,
-    .p-inputtext.p-component.p-filled.p-inputnumber-input.p-inputnumber-input {
+    .p-inputtext.p-component.p-filled.p-inputnumber-input,
+    .p-inputtext.p-component.p-filled.p-inputnumber-input {
         max-width: 80px;
+    }
+
+    .p-inputtext.p-component {
+        max-width: 120px;
+    }
+}
+
+.p-column-title {
+    text-align: center;
+}
+
+.p-datatable.p-component.p-datatable-selectable.p-datatable-scrollable.p-datatable-responsive-scroll.p-datatable-striped.p-datatable-gridlines.p-datatable-sm {
+    width: 100%;
+}
+
+.p-menuitem.p-menuitem-active {
+    list-style: none;
+}
+
+.p-datatable-wrapper {
+    .p-column-header-content,
+    .p-editable-column{
+        padding: 5px !important;
     }
 }

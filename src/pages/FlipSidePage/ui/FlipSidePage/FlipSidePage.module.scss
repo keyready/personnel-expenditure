@@ -1,0 +1,40 @@
+.FlipSidePage {
+    display: flex;
+    flex-direction: column;
+}
+
+.bgImg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.text {
+    z-index: 20;
+}
+
+.link {
+    background: #BAE3FF;
+    border-radius: 10px;
+    z-index: 20;
+    padding: 5px 30px;
+    cursor: pointer;
+    align-self: start;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.text1 {
+    z-index: 20;
+}

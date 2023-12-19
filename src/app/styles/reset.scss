@@ -1,0 +1,47 @@
+li {
+    list-style: circle inside;
+}
+
+body, h1, h2, h3, h4, h5, h6, li, ul, textarea, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+}
+
+.p-icon {
+    margin-right: 10px;
+}
+
+.p-datatable-table {
+    * {
+        color: black !important;
+        background: rgb(255 255 255 / 30%) !important;
+        font: var(--font-m);
+        font-size: 20px !important;
+    }
+}
+
+.p-column-title {
+    font-weight: bold;
+}
+
+.p-datatable-tbody {
+    tr {
+        td {
+            text-align: center;
+
+            &:nth-child(2) {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .p-inputtext.p-component.p-filled.p-inputnumber-input.p-inputnumber-input,
+    .p-inputtext.p-component.p-filled.p-inputnumber-input.p-inputnumber-input {
+        max-width: 80px;
+    }
+}

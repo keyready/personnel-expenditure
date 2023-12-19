@@ -1,0 +1,21 @@
+.TodoCard {
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: 2px solid var(--primary-color);
+}
+
+.completed {
+    color: green;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.title {
+    cursor: pointer;
+}
+
+.newTitleInput {
+    width: auto;
+    font: var(--font-l);
+    font-weight: bold;
+}
